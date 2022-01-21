@@ -28,7 +28,7 @@ Rebooted and frantically manhandled all the F-keys to open the settings. All it 
 Back to Virtualbox and the setup was easypeasy. 64 bit Debian 11.  
 <img src="Pictures/debian11Login.png" alt="Debian 11 Login Screen" width="50%" length="50%">
 
-Ended up also installing the VirtualBox Guest additions to have more control. Mainly to control the screen size.
+Ended up also installing the VirtualBox Guest additions to have more control. Mainly to control the VM resolution from the menus.
 
 <h2>C) WebGoat. Install WebGoat practice target.</h2>
 
@@ -36,6 +36,22 @@ Followed the steps in the provided link. No problem here.
 
 <img src="Pictures/webGoatLogin.png" alt="WebGoat login screen" width="50%" length="50%">
 <h2>D) Hacker warmup. Solve these tasks on WebGoat</h2>
+<h3>General: HTTP Basics</h3>
+<img src="Pictures/webGoatHTTPBasics3Fail.png">  
+<img src="Pictures/webGoatHTTPBasic3Success.png">  
+
+This one was a bit confusing because as I got to part 3, I knew that POST method was used without really checking anywhere. The magic number confused me as under the Developer Tools Network tab there was only attack1 and no magic numbers in the request or any other sections. I searched... I gave up.  
+
+After submitting POST as answer one, leaving the number blank and getting the Fail -message an attack2 event appeared with the correct answer. Victory.
+
+<h3>General: Developer Tools</h3>
+<img src="Pictures/webGoatDevTools4.png">  
+<img src="Pictures/webGoatDevTools4Success.png">  
+<img src="Pictures/webGoatDevTools6.png">  
+<img src="Pictures/webGoatDevTools6Success.png">  
+
+This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.
+
 <h2>E)</h2>  
 <h2>F)</h2>  
 <h2>G)</h2>  
