@@ -7,7 +7,7 @@ I am already dual-booting Debian 11 with Windows 10 but decided to install it al
 I have never before installed Virtualbox on Linux (and it has been a while for Windows also) so had to use a [guide](https://linoxide.com/how-to-install-virtualbox-on-debian-11/) for it. Í chose the wget and apt install route and the installation ran through without a hitch.  
 After checking that Virtualbox actually runs, I downloaded the Debian 11 64 bit installation media (.iso).  
 A problem occurred.. All the OS options for creating a new VM where for 32-bit systems. A little [Duck](https://duckduckgo.com) told me a quick BIOS visit would remedy the situation.  
-Rebooted and frantically manhandled all the F-keys to open the settings. All it took was enabling one setting (Something to do with Virtual or ...) Forgot the exact name.
+Rebooted and frantically manhandled all the F-keys to open the settings. All it took was enabling one setting (Something to do with Virtual or ...) Forgot the exact name.  
 Back to Virtualbox and the setup was easypeasy. 64 bit Debian 11. 
 ![Debian 11 Login screen](Homework/Pictures/debian11Login.png)
 * <h2>C) WebGoat. Install WebGoat practice target.</h2>
