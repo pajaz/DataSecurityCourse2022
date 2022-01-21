@@ -45,10 +45,12 @@ This one was a bit confusing because as I got to part 3, I knew that POST method
 After submitting POST as answer one, leaving the number blank and getting the Fail -message an attack2 event appeared with the correct answer. Victory.
 
 <h3>General: Developer Tools</h3>
-<img src="Pictures/webGoatDevTools4.png">  
-<img src="Pictures/webGoatDevTools4Success.png">  
-<img src="Pictures/webGoatDevTools6.png">  
-<img src="Pictures/webGoatDevTools6Success.png">  
+This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.  
+
+<img src="Pictures/webGoatDevTools4.png" width="50%">  
+<img src="Pictures/webGoatDevTools4Success.png" width="50%">  
+<img src="Pictures/webGoatDevTools6.png" width="50%">  
+<img src="Pictures/webGoatDevTools6Success.png" width="50%">  
 
 This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.
 
