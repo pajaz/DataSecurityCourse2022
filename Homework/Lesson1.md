@@ -2,6 +2,17 @@
   
 <h2>Z)</h2>  
 <h2>A) Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-4).</h2>
+
+As requested in the Over The Wire instructions,, I will not post the exact commands used to get the passwords.
+So here is a bunch of screenshots:  
+<img src="Pictures/bandit0.png">
+<img src="Pictures/bandit0-1.png">
+<img src="Pictures/bandit1-2.png">
+<img src="Pictures/bandit2-3.png">
+<img src="Pictures/bandit3-4.png">
+<img src="Pictures/bandit4-5.png">
+<img src="Pictures/bandit5-6.png">
+<img src="Pictures/bandit6-7.png">
 <h2>B) Bullseye. Install Debian 11-Bullseye virtual machine in VirtulBox.</h2>  
 
 I am already dual-booting Debian 11 with Windows 10 but decided to install it also on Virtualbox because the WebGoat application recommends being disconnected from Internet while it's running. I can have my Internet on the host computer.  
