@@ -3,4 +3,5 @@ Homework and notes for Data Security ICT4TF022-3008 course taught by Tero Karvin
 
 <h2>Homework</h2>
 [Lesson 1](Homework/Lesson1.md)
+[Lesson 2]()
 
