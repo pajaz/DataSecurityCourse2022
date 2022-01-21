@@ -8,7 +8,7 @@ I have never before installed Virtualbox on Linux (and it has been a while for W
 After checking that Virtualbox actually runs, I downloaded the Debian 11 64 bit image.  
 A problem occurred.. All the OS options for creating a new VM where for 32-bit systems. A little [Duck](https://duckduckgo.com) told me a quick BIOS visit would remedy the situation.  
 Rebooted and frantically manhandled all the F-keys to open the settings. All it took was enabling one setting (Something to do with Virtual or ...) Forgot the exact name.  
-Back to Virtualbox and the setup was easypeasy. 64 bit Debian 11. 
+Back to Virtualbox and the setup was easypeasy. 64 bit Debian 11.  
 <img src="Pictures/debian11Login.png" alt="Debian 11 Login Screen" width="50%" length="50%">
 * <h2>C) WebGoat. Install WebGoat practice target.</h2>
 * <h2>D) Hacker warmup. Solve these tasks on WebGoat</h2>
