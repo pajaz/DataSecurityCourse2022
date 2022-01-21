@@ -16,7 +16,13 @@ Rebooted and frantically manhandled all the F-keys to open the settings. All it 
 
 Back to Virtualbox and the setup was easypeasy. 64 bit Debian 11.  
 <img src="Pictures/debian11Login.png" alt="Debian 11 Login Screen" width="50%" length="50%">
+
+Ended up also installing the VirtualBox Guest additions to have more control. Mainly to control the screen size.
+
 <h2>C) WebGoat. Install WebGoat practice target.</h2>
+
+Followed the steps in the provided link. No problem here.
+<img src="Pictures/webGoatLogin.png" alt="WebGoat login screen" width="50%" length="50%">
 <h2>D) Hacker warmup. Solve these tasks on WebGoat</h2>
 <h2>E)</h2>  
 <h2>F)</h2>  
