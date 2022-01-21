@@ -47,12 +47,8 @@ After submitting POST as answer one, leaving the number blank and getting the Fa
 <h3>General: Developer Tools</h3>
 This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.  
 
-<img src="Pictures/webGoatDevTools4.png" width="50%">  
-<img src="Pictures/webGoatDevTools4Success.png" width="50%">  
-<img src="Pictures/webGoatDevTools6.png" width="50%">  
-<img src="Pictures/webGoatDevTools6Success.png" width="50%">  
-
-This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.
+<img src="Pictures/webGoatDevTools4Success.png" width="75%">  
+<img src="Pictures/webGoatDevTools6Success.png" width="75%">  
 
 <h2>E)</h2>  
 <h2>F)</h2>  
