@@ -38,7 +38,7 @@ Followed the steps in the provided link. No problem here.
 <h2>D) Hacker warmup. Solve these tasks on WebGoat</h2>
 <h3>General: HTTP Basics</h3>
 <img src="Pictures/webGoatHTTPBasics3Fail.png">  
-<img src="Pictures/webGoatHTTPBasic3Success.png">  
+<img src="Pictures/webGoatHTTPBasics3Success.png">  
 
 This one was a bit confusing because as I got to part 3, I knew that POST method was used without really checking anywhere. The magic number confused me as under the Developer Tools Network tab there was only attack1 and no magic numbers in the request or any other sections. I searched... I gave up.  
 
