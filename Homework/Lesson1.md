@@ -21,7 +21,8 @@ Ended up also installing the VirtualBox Guest additions to have more control. Ma
 
 <h2>C) WebGoat. Install WebGoat practice target.</h2>
 
-Followed the steps in the provided link. No problem here.
+Followed the steps in the provided link. No problem here.  
+
 <img src="Pictures/webGoatLogin.png" alt="WebGoat login screen" width="50%" length="50%">
 <h2>D) Hacker warmup. Solve these tasks on WebGoat</h2>
 <h2>E)</h2>  
