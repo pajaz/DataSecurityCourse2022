@@ -1,6 +1,6 @@
 # Lesson 1 Homework
   
-## Z) 
+## Z 
 
 ### Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains
 
@@ -28,9 +28,9 @@
 
 ### Karvinen 2021: Install Webgoat 8 - [Learn Web Pentesting](https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/)
 
-* See assignment [C](#c)-webgoat.-install-webgoat-practice-target.)
+* See assignment [C](#c-webgoat.-install-webgoat-practice-target.)
 
-## A and M) Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-7).
+## A and M Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-7).
 
 As requested in the Over The Wire instructions,, I will not post the exact commands used to get the passwords.
 So here is a bunch of screenshots:  
@@ -45,7 +45,7 @@ So here is a bunch of screenshots:
 
 If asked, I can provide the methods.
 
-## B) Bullseye. Install Debian 11-Bullseye virtual machine in VirtulBox.
+## B Bullseye. Install Debian 11-Bullseye virtual machine in VirtulBox.
 
 I am already dual-booting Debian 11 with Windows 10 but decided to install it also on Virtualbox because the WebGoat application recommends being disconnected from Internet while it's running. I can have my Internet on the host computer.  
 
@@ -64,13 +64,13 @@ Ended up also installing the VirtualBox Guest additions[https://kifarunix.com/in
 
 Noticed afterwards that Tero had an [article](https://terokarvinen.com/2021/install-debian-on-virtualbox/) about the installation. Should have probably done the assignments in order or read the tips before starting. Noted for future.  
 
-## C) WebGoat. Install WebGoat practice target.
+## C WebGoat. Install WebGoat practice target.
 
 Followed the steps in the provided link and article. No problem here.  
 
 <img src="Pictures/webGoatLogin.png" alt="WebGoat login screen" width="50%" length="50%">
 
-## D) Hacker warmup. Solve these tasks on WebGoat
+## D Hacker warmup. Solve these tasks on WebGoat
 
 ### General: HTTP Basics
 <img src="Pictures/webGoatHTTPBasics3Fail.png">  
@@ -86,6 +86,6 @@ This part I was already very familiar with as I have built a few websites in the
 <img src="Pictures/webGoatDevTools4Success.png" width="75%">  
 <img src="Pictures/webGoatDevTools6Success.png" width="75%">  
 
-## N)
+## N
 
-## G)
+## G
