@@ -4,16 +4,16 @@
 
 ### Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains
 
-    * Conventional defence tools focusing on post-detection actions and trying to fix flaws after succeful intrusions have become obsolete as the adversaries have evolved their methods.  
-    * Advanced Persistent Threat (APT) is a class of threat focused on compromising data for economic or military gains. These actors utilize methods that cannot necessarily be patched or detected by AV software.  
-    * Kill Chain describes the step by step process and adversary follows in order to achieve his goal. While phased detection models have been developed in computing before, they have mostly focused on post-intrusion actions.   
-    * The idea described in the article is for the defender to disrupt any of these Kill Chain steps to make the attacker fall back then collect data from both mitigated and unmitigated attacks to develop more effective measures for future.  
-    * The main goal of the defence is to not necessarily identify who's behind the attack but how their performing the attack.
-    * Persistent attack requires a persistent defence. By gathering and carefully analyzing intelligence from former attacks the defender can:
-        * Develop new ways of mitigation against future intrusions.  
-        * Identify persistent intrusion campaigns.  
-        * Possibly identify the adversaries and their goals.  
-        * Make the adversaries goals seem less lucrative by having them continually change or develop methods and tools.  
+* Conventional defence tools focusing on post-detection actions and trying to fix flaws after succeful intrusions have become obsolete as the adversaries have evolved their methods.  
+* Advanced Persistent Threat (APT) is a class of threat focused on compromising data for economic or military gains. These actors utilize methods that cannot necessarily be patched or detected by AV software.  
+* Kill Chain describes the step by step process and adversary follows in order to achieve his goal. While phased detection models have been developed in computing before, they have mostly focused on post-intrusion actions.   
+* The idea described in the article is for the defender to disrupt any of these Kill Chain steps to make the attacker fall back then collect data from both mitigated and unmitigated attacks to develop more effective measures for future.  
+* The main goal of the defence is to not necessarily identify who's behind the attack but how their performing the attack.
+* Persistent attack requires a persistent defence. By gathering and carefully analyzing intelligence from former attacks the defender can:
+    * Develop new ways of mitigation against future intrusions.  
+    * Identify persistent intrusion campaigns.  
+    * Possibly identify the adversaries and their goals.  
+    * Make the adversaries goals seem less lucrative by having them continually change or develop methods and tools.  
 
 
 ### Karvinen 2020: Command Line Basics Revisited
