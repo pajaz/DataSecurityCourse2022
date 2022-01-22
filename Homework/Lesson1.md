@@ -1,7 +1,21 @@
 <h1>Lesson 1 Homework</h1>
   
-<h2>Z)</h2>  
-<h2>A) Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-4).</h2>
+<h2>Z)</h2> 
+    <h3>Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains</h3>
+
+    * Conventional defence tools focusing on post-detection actions and trying to fix flaws after succeful intrusions have become obsolete as the adversaries have evolved their methods.  
+    * Advanced Persistent Threat (APT) is a class of threat focused on compromising data for economic or military gains. These actors utilize methods that cannot necessarily be patched or detected by AV software.  
+    * Kill Chain describes the step by step process and adversary follows in order to achieve his goal. While phased detection models have been developed in computing before, they have mostly focused on post-intrusion actions.   
+    * The idea described in the article is for the defender to disrupt any of these Kill Chain steps to make the attacker fall back then collect data from both mitigated and unmitigated attacks to develop more effective measures for future.  
+    * The main goal of the defence is to not necessarily identify who's behind the attack but how their performing the attack.
+    * Persistent attack requires a persistent defence. By gathering and carefully analyzing intelligence from former attacks the defender can:
+        * Develop new ways of mitigation against future intrusions.  
+        * Identify persistent intrusion campaigns.  
+        * Possibly identify the adversaries and their goals.  
+        * Make the adversaries goals seem less lucrative by having them continually change or develop methods and tools.  
+
+    <h3></h3>
+<h2>A and M) Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-7).</h2>
 
 As requested in the Over The Wire instructions,, I will not post the exact commands used to get the passwords.
 So here is a bunch of screenshots:  
@@ -12,7 +26,10 @@ So here is a bunch of screenshots:
 <img src="Pictures/bandit3-4.png">
 <img src="Pictures/bandit4-5.png">
 <img src="Pictures/bandit5-6.png">
-<img src="Pictures/bandit6-7.png">
+<img src="Pictures/bandit6-7.png">  
+
+If asked, I can provide the methods.
+
 <h2>B) Bullseye. Install Debian 11-Bullseye virtual machine in VirtulBox.</h2>  
 
 I am already dual-booting Debian 11 with Windows 10 but decided to install it also on Virtualbox because the WebGoat application recommends being disconnected from Internet while it's running. I can have my Internet on the host computer.  
@@ -21,18 +38,18 @@ I have never before installed Virtualbox on Linux (and it has been a while for W
 
 After checking that Virtualbox actually runs, I downloaded the Debian 11 64 bit image.  
 
-A problem occurred.. All the OS options for creating a new VM where for 32-bit systems. A little [Duck](https://duckduckgo.com) told me a quick BIOS visit would remedy the situation.  
+A problem occurred.. All the OS options for creating a new VM where for 32-bit systems. A little [Duck](https://duckduckgo.com) told me a quick BIOS visit would remedy the situation.
 
-Rebooted and frantically manhandled all the F-keys to open the settings. All it took was enabling one setting (Something to do with Virtual or ...) Forgot the exact name.  
+Rebooted and frantically manhandled all the F-keys to open the settings. All it took was enabling the virtualization setting under Security tab.
 
 Back to Virtualbox and the setup was easypeasy. 64 bit Debian 11.  
 <img src="Pictures/debian11Login.png" alt="Debian 11 Login Screen" width="50%" length="50%">
 
-Ended up also installing the VirtualBox Guest additions to have more control. Mainly to control the VM resolution from the menus.
+Ended up also installing the VirtualBox Guest additions[https://kifarunix.com/install-virtualbox-guest-additions-on-debian-11/] to have more control. Mainly to control the VM resolution from the menus.
 
 <h2>C) WebGoat. Install WebGoat practice target.</h2>
 
-Followed the steps in the provided link. No problem here.  
+Followed the steps in the provided link and article. No problem here.  
 
 <img src="Pictures/webGoatLogin.png" alt="WebGoat login screen" width="50%" length="50%">
 <h2>D) Hacker warmup. Solve these tasks on WebGoat</h2>
@@ -50,6 +67,5 @@ This part I was already very familiar with as I have built a few websites in the
 <img src="Pictures/webGoatDevTools4Success.png" width="75%">  
 <img src="Pictures/webGoatDevTools6Success.png" width="75%">  
 
-<h2>E)</h2>  
-<h2>F)</h2>  
+<h2>N)</h2>  
 <h2>G)</h2>  
