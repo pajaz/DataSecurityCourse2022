@@ -31,7 +31,7 @@
 
 * Definitely a useful article. 
 * Definitely something I maybe should've read before starting with the installations but I managed and ended up doing pretty much the same steps.
-* The GRUB menu pre-boot edit part was something I haven't looked in to before.
+* The GRUB menu pre-boot edit part was something I haven't looked in to before. Didn't have to know but it goes in the "nice to know" -category
 
 ### Karvinen 2021: Install Webgoat 8 - [Learn Web Pentesting](https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/)
 
