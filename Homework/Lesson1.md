@@ -6,9 +6,16 @@
 
 * Conventional defence tools focusing on post-detection actions and trying to fix flaws after succeful intrusions have become obsolete as the adversaries have evolved their methods.  
 * Advanced Persistent Threat (APT) is a class of threat focused on compromising data for economic or military gains. These actors utilize methods that cannot necessarily be patched or detected by AV software.  
-* Kill Chain describes the step by step process an adversary follows in order to achieve his goal. While phased detection models have been developed in computing before, they have mostly focused on post-intrusion actions. Methods described in the article put defender in the shoes of his enemy in order to successfully thwart or disrupt the attacks.  
+* Intrusion Kill Chain describes the step by step process an adversary follows in order to achieve his goals from gathering information to completing the objective in seven phases:
+    1. Reconnaisance  
+    2. Weaponization  
+    3. Delivery  
+    4. Exploitation  
+    5. Installation  
+    6. Command and Control (C2)  
+    7. Actions on Objectives  
 * The idea described in the article is for the defender to disrupt any of these Kill Chain steps to make the attacker fall back then collect data from both mitigated and unmitigated attacks to develop more effective measures for future.  
-* The main goal of the defence is to not necessarily identify who's behind the attack but how their performing the attack.
+    * The process being a chain means that when one link/step fails the process as a whole fails. 
 * Persistent attack requires a persistent defence. By gathering and carefully analyzing intelligence from former attacks the defender can:
     * Develop new ways of mitigation against future intrusions.  
     * Identify persistent intrusion campaigns.  
