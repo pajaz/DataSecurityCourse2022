@@ -28,7 +28,7 @@
 
 ### Karvinen 2021: Install Webgoat 8 - [Learn Web Pentesting](https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/)
 
-* See assignment [C](#c-webgoat.-install-webgoat-practice-target)
+* See assignment [C](#c-webgoat-install-webgoat-practice-target)
 
 ## A and M Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-7).
 
