@@ -1,7 +1,8 @@
-<h1>Lesson 1 Homework</h1>
+# Lesson 1 Homework
   
-<h2>Z)</h2> 
-    <h3>Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains</h3>
+## Z) 
+
+    ### Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains
 
     * Conventional defence tools focusing on post-detection actions and trying to fix flaws after succeful intrusions have become obsolete as the adversaries have evolved their methods.  
     * Advanced Persistent Threat (APT) is a class of threat focused on compromising data for economic or military gains. These actors utilize methods that cannot necessarily be patched or detected by AV software.  
@@ -14,7 +15,11 @@
         * Possibly identify the adversaries and their goals.  
         * Make the adversaries goals seem less lucrative by having them continually change or develop methods and tools.  
 
-    <h3></h3>
+
+    ### Karvinen 2020: Command Line Basics Revisited
+
+    
+
 <h2>A and M) Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-7).</h2>
 
 As requested in the Over The Wire instructions,, I will not post the exact commands used to get the passwords.
