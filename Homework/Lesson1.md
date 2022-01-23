@@ -88,11 +88,74 @@ This one was a bit confusing because as I got to part 3, I knew that POST method
 After submitting POST as answer one, leaving the number blank and getting the Fail -message an attack2 event appeared with the correct answer. Victory.
 
 ### General: Developer Tools
-This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.  
+This part I was already very familiar with as I have built a few websites in the past. Pictures tell the story.
 
 <img src="Pictures/webGoatDevTools4Success.png" width="75%">  
 <img src="Pictures/webGoatDevTools6Success.png" width="75%">  
 
 ## N
 
-## G
+## O Voluntary bonus: Johnny Tables. Solve Webgoat: A1 Injection (intro).
+
+I will only post the notes for the parts that require user input here.
+
+### 2
+
+You can get the required department with a simple code:
+SELECT department FROM employees WHERE last_name LIKE 'Franco' AND first_name LIKE 'Bob'  
+
+Even easier would be to just go:  
+SELECT deparment FROM employees WHERE userid=96134  
+But I thought I might not know mr. Franco's userid as it was not provided in the assignment.  
+
+### 3 DML (Data Manipulation Language)
+
+Includes the most common SQL commands like SELECT, INSERT, UPDATE, DELETE etc.  
+
+Violations:  
+Confidentiality and Integrity
+
+Solution:  
+UPDATE employees SET department = 'Sales' WHERE first_name LIKE 'Tobi' AND last_name LIKE 'Barnett'  
+USERID	FIRST_NAME	LAST_NAME	DEPARTMENT	SALARY AUTH_TAN  
+89762	Tobi	Barnett	Sales	77000	TA9LL1
+
+### 4 DDL (Data Definition Language)
+
+Creation (CREATE), modifying (ALTER), and dropping (DROP) the structure of database objects.  
+
+Violations:  
+Integrity and Availability  
+
+Solution:  
+ALTER TABLE employees ADD phone varchar(20);  
+
+### 5 DCL (Data Control Language)
+
+Create privileges to allow users to access and manipulate the database.  
+Provide security to database objects.  
+
+Commands like GRANT and REVOKE.  
+
+Violation: Confidentiality and Availability  
+
+Solution:  
+GRANT ALTER TABLE TO 'UnauthorizedUser';
+
+### 9
+
+<img src="Pictures/SQLInjSuccess9.png" width="50%">
+
+### 10  
+
+Could not parse: 0 OR 1=1 to a number
+This returned after trying to pass NaN values to Login_Count. This one might be protected.
+Tried the values:
+Login_Count = 0
+userid = 0 OR 1=1
+
+Success.
+<img src="Pictures/SQLInjSuccess10.png" width="50%">
+
+
+
