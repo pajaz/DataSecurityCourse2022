@@ -39,7 +39,7 @@
 
 ## A and M Bandit oh-five. Solve Over The Wire: Bandit the first five levels (0-7).
 
-As requested in the Over The Wire instructions,, I will not post the exact commands used to get the passwords.
+As requested in the Over The Wire instructions I will not post the exact commands used to get the passwords.
 So here is a bunch of screenshots:  
 <img src="Pictures/bandit0.png">
 <img src="Pictures/bandit0-1.png">
