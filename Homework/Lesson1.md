@@ -140,21 +140,21 @@ Commands like GRANT and REVOKE.
 Violation: Confidentiality and Availability  
 
 Solution:  
-GRANT ALTER TABLE TO 'UnauthorizedUser';
+GRANT ALTER TABLE TO 'UnauthorizedUser';  
 
 ### 9
 
-<img src="Pictures/SQLInjSuccess9.png" width="50%">
+<img src="Pictures/SQLInjSuccess9.png" width="50%">  
 
 ### 10  
 
-Could not parse: 0 OR 1=1 to a number
-This returned after trying to pass NaN values to Login_Count. This one might be protected.
-Tried the values:
-Login_Count = 0
-userid = 0 OR 1=1
+Could not parse: 0 OR 1=1 to a number  
+This returned after trying to pass NaN values to Login_Count. This one might be protected.  
+Tried the values:  
+Login_Count = 0  
+userid = 0 OR 1=1  
 
-Success.
+Success.  
 <img src="Pictures/SQLInjSuccess10.png" width="50%">
 
 
