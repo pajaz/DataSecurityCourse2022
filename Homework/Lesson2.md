@@ -23,7 +23,7 @@ Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, y
 ### 0 SELECT basics  
 
 1. SELECT population FROM world  
-      WHERE name = 'Germany' 
+        WHERE name = 'Germany' 
     Population: 80716000  
 2. SELECT name, population FROM world  
       WHERE name IN ('Sweden', 'Norway', 'Denmark');  
