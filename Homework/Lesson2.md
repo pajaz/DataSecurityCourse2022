@@ -33,7 +33,23 @@ Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, y
     <img src="Pictures/Lesson2/sqlZoo0-3.png">
 
 ### 2 SELECT from World  
+
+1.  
   
+2. SELECT name FROM world  
+      WHERE population >= 200000000  
+    <img src="Pictures/Lesson2/sqlZoo2-2.png">  
+3. SELECT name, (gdp / population) as 'per capita GDP' FROM world  
+      WHERE population >= 200000000  
+    <img src="Pictures/Lesson2/sqlZoo2-3.png">   
+4. SELECT name, (population / 1000000) as 'pop/mil' FROM world  
+      WHERE continent LIKE 'South America'  
+    <img src="Pictures/Lesson2/sqlZoo2-4.png">  
+5. SELECT name, population FROM world  
+      WHERE name IN ('France', 'Germany', 'Italy')  
+    <img src="Pictures/Lesson2/sqlZoo2-5.png"> 
+
+
 ## b) Injected. Solve WebGoat:  
 
 ### A1 Injection (intro)  
