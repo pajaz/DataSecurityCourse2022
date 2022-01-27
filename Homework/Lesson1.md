@@ -150,7 +150,8 @@ GRANT ALTER TABLE TO 'UnauthorizedUser';
 
 Could not parse: 0 OR 1=1 to a number  
 This returned after trying to pass NaN values to Login_Count. This one might be protected.  
-Tried the values:  
+
+Afterwards tried the values:  
 Login_Count = 0  
 userid = 0 OR 1=1  
 
