@@ -59,7 +59,7 @@ Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, y
     <img src="Pictures/Lesson2/sqlZoo2-8.png">  
 9. SELECT name, ROUND(population/1000000, 2) as 'pop/mil', ROUND(gdp/1000000000, 2) as 'gpd/bil' FROM world  
       WHERE continent LIKE 'South America'  
-  <img src="Pictures/Lesson2/sqlZoo2-9.png">  
+    <img src="Pictures/Lesson2/sqlZoo2-9.png">  
 10. SELECT name, ROUND(gdp/population, -3) as 'gdp/pop' FROM world  
       WHERE gdp >= 1000000000000  
     <img src="Pictures/Lesson2/sqlZoo2-10.png">   
