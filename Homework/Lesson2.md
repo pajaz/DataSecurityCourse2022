@@ -83,6 +83,8 @@ Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, y
 
 ### A1 Injection (intro)  
 
+[See here](/Homework/WebGoat/SQLInjections/A1InjectionIntro.md) 
+  
 ## m) Voluntary bonus: Pick your tasks from SQLZoo 1, 3-9.    
 
 ## n) Voluntary difficult bonus: WebGoat: SQL Injection (advanced).  
