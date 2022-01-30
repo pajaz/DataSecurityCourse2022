@@ -46,11 +46,11 @@ Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, y
 
 ## CVE-2021-44228 (Apache Log4J2)
   
-Affected component: Apache Log4J2 
-Versions: 2.0-beta9 through 2.15.0 with exceptions for a few security releases (2.12.2, 2.12.3, and 2.3.1)  
-Component description: [Login utility](https://en.wikipedia.org/wiki/Log4j) based on Java and a part of Apache Logging Services  
-Vulnerability Description: Attacker can take control over log messages and their parameters and thus excecute his own code on the server if the log4j message lookup substitution ["which enables special strings to be replaced, during the time of logging, by other dynamically generated strings."](https://www.techrepublic.com/article/check-for-log4j-vulnerabilities-with-this-simple-to-use-script/) is enabled.  
-Mitigation: 
+**Affected component**: Apache Log4J2  
+**Versions**: 2.0-beta9 through 2.15.0 with exceptions for a few security releases (2.12.2, 2.12.3, and 2.3.1)  
+**Component description**: [Logging utility](https://en.wikipedia.org/wiki/Log4j) based on Java and a part of Apache Logging Services  
+**Vulnerability Description**: Attacker can take control over log messages and their parameters and thus excecute his own code on the server if the log4j message lookup substitution ["which enables special strings to be replaced, during the time of logging, by other dynamically generated strings."](https://www.techrepublic.com/article/check-for-log4j-vulnerabilities-with-this-simple-to-use-script/) is enabled.  
+**Mitigation**: 
 As of version 2.15 the message lookup substition is by default disabled. 
 As of version 2.16 (and the aforementioned security updates) the message lookup substitution has been completely removed.  
 
