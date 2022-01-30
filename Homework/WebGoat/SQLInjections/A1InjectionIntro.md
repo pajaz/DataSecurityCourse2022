@@ -113,7 +113,7 @@ SELECT * FROM access_log WHERE action = '" + action + "';
 So let's see:  
 Action contains: test'; DROP TABLE access_log  
 So the query would be:  
-SELECT * FROM access_log WHERE action = 'test'; DROP TABLE access_log ';  
+SELECT * FROM access_log WHERE action = 'test'; DROP TABLE access_log ';    
 Did not really think this would work and it didn't but wanted to see what happens for educational purposes. 
 We seem to have a trailing quotation mark in the SQL query sent to the server.  
 
