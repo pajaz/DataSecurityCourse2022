@@ -78,9 +78,9 @@ Also the log4j 2 utility is widely used by Java applications all over the world.
   
 ## m) Voluntary bonus: Pick your tasks from SQLZoo 1, 3-9.    
 
-3 SELECT from Nobel Tutorial [HERE](Homework/SQLZoo/sqlZoo3.md)
+3 SELECT from Nobel Tutorial [HERE](/Homework/SQLZoo/sqlZoo3.md)  
 
-4 SELECT within SELECT Tutorial [HERE](Homework/SQLZoo/sqlZoo4.md)
+4 SELECT within SELECT Tutorial [HERE](/Homework/SQLZoo/sqlZoo4.md)  
 
 ## n) Voluntary difficult bonus: WebGoat: SQL Injection (advanced).  
 
