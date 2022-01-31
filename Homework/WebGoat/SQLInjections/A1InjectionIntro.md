@@ -48,11 +48,7 @@ GRANT ALTER TABLE TO 'UnauthorizedUser';
 
 ### 9
 
-<<<<<<< HEAD
 <img src="./Homework/Pictures/SQLInj9Success.png" width="50%">  
-=======
-<img src="Homework/Pictures/SQLInj9Success.png" width="50%">  
->>>>>>> 67b99d8e8ba1f817347311a3a37e137cef6e7d7c
 
 ### 10  
 
@@ -64,11 +60,7 @@ Login_Count = 0
 userid = 0 OR 1=1  
 
 Success.  
-<<<<<<< HEAD
 <img src="./Homework/Pictures/SQLInj10Success.png" width="50%">  
-=======
-<img src="Homework/Pictures/SQLInj10Success.png" width="50%">  
->>>>>>> 67b99d8e8ba1f817347311a3a37e137cef6e7d7c
 
 ### 11 Confidentiality (Get access to salaries)
   
