@@ -41,6 +41,14 @@ Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, y
 
   
 ### Any episode from [Darknet Diaries](https://darknetdiaries.com/).  
+
+#### [EP 11: Strictly Confidential](https://darknetdiaries.com/episode/11/)
+  
+* A forensics department employee, Andrew works for a company doing compromise assessment for a high profile tech company that wants to know of any flaws in their system. During the investigation an active threat actor was detected and the forensics team was called in. The threat actor was identified to be an APT actor. The group had been active in the system for 5 years and had been succesful in extracting confidential data in the progress. After a 2 month forensics investigation, enough data was gathered and the decision to remediate the malware was made but suddenly the the threat actors went quiet.  
+* Compromise assessments is the investigation of company infrastructure to find out any possible weaknesses.  
+* APT (Advanced Persistent Threat) actors are well-funded (often  by states as was the case here) groups that have a specific goal in mind and possess the means to get to that goal. The recognition of such groups is often difficult and slow. In this episode the threat actors were recognized due to earlier published reports portraying similar methods.  
+* The forensics process involves identifying and isolating the malware to study it and the actions of the threat actors in order to develop a profile for future identification/mitigation.  
+	* If the attack is mitigated too soon the defender might not be prepared well enough for future attacks. For example if the actual behavior and goals of the adversary are not investigated properly they might just change their toolset and go unrecognized in the future.  
   
 ### Pick a CVE, and briefly explain it & why it matters  
 
@@ -56,20 +64,16 @@ As of version 2.15 the message lookup substition is by default disabled.
 As of version 2.16 (and the aforementioned security updates) the message lookup substitution has been completely removed.  
   
 **So what?**  
-If the attacker can execute any arbitrary code he can effectively take control over your entire server.  
-Also the log4j 2 utility is widely used by Java applications all over the world.  
+If the attacker can execute any arbitrary code he can effectively manipulate data thus compromising confidentiality, accessibility and integrity.  
+The log4j 2 utility is widely used by Java applications all over the world.  
   
   
 ## a) Sequel. Solve [SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial):
 
-### 0 SELECT basics  
-
-[See here](/Homework/SQLZoo/sqlZoo0.md)
-
-### 2 SELECT from World
-
-[See here](/Homework/SQLZoo/sqlZoo2.md)
-
+0. SELECT basics [HERE](/Homework/SQLZoo/sqlZoo0.md)  
+  
+2. SELECT from World [HERE](/Homework/SQLZoo/sqlZoo2.md)  
+  
 ## b) Injected. Solve WebGoat:  
 
 ### A1 Injection (intro)  
@@ -78,9 +82,9 @@ Also the log4j 2 utility is widely used by Java applications all over the world.
   
 ## m) Voluntary bonus: Pick your tasks from SQLZoo 1, 3-9.    
 
-3 SELECT from Nobel Tutorial [HERE](/Homework/SQLZoo/sqlZoo3.md)  
+3. SELECT from Nobel Tutorial [HERE](/Homework/SQLZoo/sqlZoo3.md)  
 
-4 SELECT within SELECT Tutorial [HERE](/Homework/SQLZoo/sqlZoo4.md)  
+4. SELECT within SELECT Tutorial [HERE](/Homework/SQLZoo/sqlZoo4.md)  
 
 ## n) Voluntary difficult bonus: WebGoat: SQL Injection (advanced).  
 
