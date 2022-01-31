@@ -70,21 +70,21 @@ The log4j 2 utility is widely used by Java applications all over the world.
   
 ## a) Sequel. Solve [SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial):
 
-0. SELECT basics [HERE](/Homework/SQLZoo/sqlZoo0.md)  
+0. SELECT basics [HERE](SQLZoo/sqlZoo0.md)  
   
-2. SELECT from World [HERE](/Homework/SQLZoo/sqlZoo2.md)  
+2. SELECT from World [HERE](SQLZoo/sqlZoo2.md)  
   
 ## b) Injected. Solve WebGoat:  
 
 ### A1 Injection (intro)  
 
-[See here](/Homework/WebGoat/SQLInjections/A1InjectionIntro.md) 
+[See here](/WebGoat/SQLInjections/A1InjectionIntro.md) 
   
 ## m) Voluntary bonus: Pick your tasks from SQLZoo 1, 3-9.    
 
-3. SELECT from Nobel Tutorial [HERE](/Homework/SQLZoo/sqlZoo3.md)  
+3. SELECT from Nobel Tutorial [HERE](SQLZoo/sqlZoo3.md)  
 
-4. SELECT within SELECT Tutorial [HERE](/Homework/SQLZoo/sqlZoo4.md)  
+4. SELECT within SELECT Tutorial [HERE](SQLZoo/sqlZoo4.md)  
 
 ## n) Voluntary difficult bonus: WebGoat: SQL Injection (advanced).  
 
@@ -98,7 +98,7 @@ sudo apt-get update
 sudo apt-get install sqlite3  
 
 Created a new database:  
-sqlite3 testDatabase.db <img src="/Homework/Pictures/Lesson2/sqliteTestdatabase.png">  
+sqlite3 testDatabase.db <img src="Pictures/Lesson2/sqliteTestdatabase.png">  
   
 Created a new table called Users:  
 sqlite> CREATE TABLE Users(  
