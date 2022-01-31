@@ -98,7 +98,7 @@ sudo apt-get update
 sudo apt-get install sqlite3  
 
 Created a new database:  
-sqlite3 testDatabase.db <img src="Homework/Pictures/Lesson2/sqliteTestdatabase.png">  
+sqlite3 testDatabase.db <img src="/Homework/Pictures/Lesson2/sqliteTestdatabase.png">  
   
 Created a new table called Users:  
 sqlite> CREATE TABLE Users(  
