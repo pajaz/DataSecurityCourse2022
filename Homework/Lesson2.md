@@ -78,7 +78,7 @@ The log4j 2 utility is widely used by Java applications all over the world.
 
 ### A1 Injection (intro)  
 
-[See here](/WebGoat/SQLInjections/A1InjectionIntro.md) 
+[See here](WebGoat/SQLInjections/A1InjectionIntro.md) 
   
 ## m) Voluntary bonus: Pick your tasks from SQLZoo 1, 3-9.    
 
