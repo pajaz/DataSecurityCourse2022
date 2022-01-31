@@ -48,7 +48,7 @@ GRANT ALTER TABLE TO 'UnauthorizedUser';
 
 ### 9
 
-<img src="../../Homework/Pictures/SQLInj9Success.png" width="50%">  
+<img src="../../../Homework/Pictures/SQLInj9Success.png" width="50%">  
 
 ### 10  
 
