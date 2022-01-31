@@ -89,11 +89,113 @@ The log4j 2 utility is widely used by Java applications all over the world.
 ## n) Voluntary difficult bonus: WebGoat: SQL Injection (advanced).  
 
   
-## Voluntary difficult bonus: Install a relational database, show CRUD operations using SQL  
+## Voluntary difficult bonus: Install a relational database, show CRUD operations using SQL AND q) Voluntary difficult bonus: Demonstrate aggregate functions (SUM, COUNT) with your own data you created in the previous step. 
   
 ### Set-up
+  
+Installed sqlite3.  
+sudo apt-get update  
+sudo apt-get install sqlite3  
+
+Created a new database:  
+sqlite3 testDatabase.db <img src="Homework/Pictures/Lesson2/sqliteTestdatabase.png">  
+  
+Created a new table called Users:  
+sqlite> CREATE TABLE Users(  
+   ...>  user_id INTEGER PRIMARY KEY,  
+   ...>  user_name STRING(30) NOT NULL,   
+   ...>  age INTEGER(120) NOT NULL,  
+   ...>  occupation STRING(30));  
+sqlite> .schema  
+CREATE TABLE Users(  
+ user_id INTEGER PRIMARY KEY,  
+ user_name STRING(30) NOT NULL,  
+ age INTEGER(120) NOT NULL,  
+ occupation STRING(30));  
+
+### CRUD and aggregate Functions  
     
-## q) Voluntary difficult bonus: Demonstrate aggregate functions (SUM, COUNT) with your own data you created in the previous step.  
+Create user:  
+sqlite> INSERT INTO Users VALUES(  
+   ...> NULL,  
+   ...> 'testman',  
+   ...> 30,  
+   ...> 'unemployed');   
+sqlite> SELECT * FROM Users;  
+1|testman|30|unemployed  
+  
+Create multiple users:  
+sqlite> INSERT INTO Users(user_name, age, occupation) VALUES(  
+   ...> 'derpman', 20, 'just derping'),  
+   ...> ('sourface', 99, 'moping'),  
+   ...> ('doggo', 7, 'guard');  
+sqlite> SELECT * FROM Users;  
+1|testman|30|unemployed  
+2|derpman|20|just derping  
+3|sourface|99|moping  
+4|doggo|7|guard  
+
+Added some more users.  
+
+Edit user occupation:  
+sqlite> SELECT 
+   ...> * FROM Users;  
+user_id|user_name|age|occupation  
+1|testman|30|unemployed  
+2|derpman|20|just derping  
+3|sourface|99|moping  
+4|doggo|7|guard  
+5|Tim|120|Enchanter  
+6|Bob|50|unemployed  
+7|Rex|8|guard  
+8|Tina|80|pensioner  
+sqlite> UPDATE Users  
+   ...> SET occupation='just derping'   
+   ...> WHERE user_name LIKE 'Bob';  
+sqlite> SELECT * FROM Users WHERE user_name LIKE 'Bob';  
+user_id|user_name|age|occupation  
+6|Bob|50|just derping  
+
+
+Search for user names and ages that are under 30 years old:  
+sqlite> SELECT user_name, age FROM Users  
+   ...> WHERE age < 30;  
+derpman|20  
+doggo|7  
+rex|8  
+
+Show the average age of users:  
+sqlite> SELECT AVG(age) as 'Average age' FROM Users;  
+Average age  
+51.75  
+
+Show how many users exist in the database:  
+sqlite> SELECT COUNT() FROM Users;  
+COUNT()  
+8  
+Show the number of people who are no unemployed and under the age of 60:  
+sqlite> SELECT COUNT() FROM Users  
+   ...> WHERE occupation <> 'unemployed'  
+   ...> AND age < 60;  
+COUNT()  
+4  
+Sum up the ages of users:  
+sqlite> SELECT SUM(age) FROM Users  
+   ...> ;  
+SUM(age)  
+414  
+
+Delete all unemployed user from the database:  
+sqlite> DELETE FROM Users WHERE occupation LIKE 'unemployed';  
+sqlite> SELECT user_name, occupation FROM Users;  
+user_name|occupation  
+derpman|just derping  
+sourface|moping  
+doggo|guard  
+Tim|Enchanter  
+Bob|just derping  
+Rex|guard  
+Tina|pensioner   
 
   
 ## p) Voluntary difficult bonus: Install a practice target for SQL injections, exploit it.  
