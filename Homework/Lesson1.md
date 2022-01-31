@@ -97,7 +97,7 @@ This part I was already very familiar with as I have built a few websites in the
 
 ## O Voluntary bonus: Johnny Tables. Solve Webgoat: A1 Injection (intro).
 
-[See here](Homework/WebGoat/SQLInjections/A1InjectionIntro.md)
+[See here](WebGoat/SQLInjections/A1InjectionIntro.md)
 
 
 
