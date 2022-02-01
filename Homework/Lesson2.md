@@ -1,5 +1,7 @@
 # Lesson 2 Homework
 
+Part of Data Security ICT4TF022-3008 course of Haaga-Helia University of Applied Sciences held by [Tero Karvinen](https://terokarvinen.com/2021/data-security-2022p3-ict4tf022-3008/)
+
 Oh, wasp!  
 
 Remember to keep it safe, legal and ethical. Especially if you grasp OWASP 10, you still can't try these to machines you don't own.  
