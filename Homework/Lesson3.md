@@ -5,8 +5,8 @@ Link to course page [Here](https://terokarvinen.com/2021/data-security-2022p3-ic
 
 # Tricks, Tips and Playbooks
 
-**ATTN**  
-Been sick since last Thursday so progress has been stunted. Finished the WebGoat assignments this morning, took around 2 hours.  
+**ATTN**    
+Been sick since last Thursday so progress has been stunted. Finished the WebGoat assignments this morning (2022/2/7), took around 2 hours.  
 The articles will require more time. Last Wednesday I read them for 3+ hours and only got to about the **halfway point** of the Mitre 2022 tactics and that's without even looking at the sub-techniques. Will try to finish reading and summarizing this evening (depending on health.)    
 **ATTN**
 
