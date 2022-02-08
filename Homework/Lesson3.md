@@ -68,12 +68,26 @@ Link to course page [Here](https://terokarvinen.com/2021/data-security-2022p3-ic
     * Technique: [Data Manipulation](https://attack.mitre.org/techniques/T1565) to distract the target and possibly never even get noticed, change a few dates here and some prices there or edit calendar meetings to make sure key personnel are not at the office on your chosen dates. I almost went with Data Destruction but nowadays a lot of the important data is stored on networked drives that are backed up on a regular basis.  
   
 
+* Technique  
+  + Techniques are the methods one chooses to to form a tactic.  
+  + Multiple techniques explained in the previous section.  
+* Subtechnique  
+  + Every technique has more specific ways on how to achieve the goal of the technique. For example in previous section's 8. Credential Access, the suggestion to use Keylogging is a subtechnique of Input Capture technique.  
+* Tactic  
+  + Tactics are the why of things. For each part in the attack chain, one can choose one or many different tactics to move through the part.  
+* Procedure  
+  + Real life example of usage of a subtechnique.  
+
   +  OWASP: Cross Site Scripting (XSS)  
 * y) Cross Site Story. Write a short story or draw a comic of a cross site  
   scripting attack. Make roles clear: who attacks? Who runs, what code, where? What unauthorized access is gained? (This subtask y does not require
   any tests with a computer.).  
-  
-  
+    
+  * Type of injection on an otherwise ok websites that usually utilizes Javascript and possibly HTML  
+  * Goal is usually to transmit private data, sessin information or perform malicious operations.  
+  * Stored vs Reflected.  
+    +  Script is permanently injected onto the target server.  
+    + In reflected attacks the delivery method 
     
 * a) Webgoat: A3 Sensitive data exposure  
     + Insecure Login: 2 Let's try  
