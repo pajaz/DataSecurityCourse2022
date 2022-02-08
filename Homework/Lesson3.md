@@ -11,61 +11,61 @@ Link to course page [Here](https://terokarvinen.com/2021/data-security-2022p3-ic
         - Explain technique, subtechnique, tactic and procedure. Give example of each.  
         - Describe a procedure (a brief description is enough, no need to repeat all steps listed) 
     
-  1. [Reconnaissance]()    
+  1. [Reconnaissance](https://attack.mitre.org/tactics/TA0043/)    
     * Gathering any intelligence that may prove useful in the span of the attack.  
-    * Technique: Search Open Website Domains for publicly available information such as e-mail addresses, domain names, key target information.  
+    * Technique: [Search Open Website Domains](https://attack.mitre.org/techniques/T1593) for publicly available information such as e-mail addresses, domain names, key target information.  
   
-  2. [Resource Development]()  
+  2. [Resource Development](https://attack.mitre.org/tactics/TA0042/)  
     * Developing, buying, leasing or stealing resources to be used in carrying out the attack.  
-    * Technique: Acquire Infrastrucure such as servers and domains by purchasing them. Easy enough if you have the money, but may leave a papertrail. Maybe even easier would be to download freely available open-source software.  
+    * Technique: [Acquire Infrastrucure](https://attack.mitre.org/techniques/T1583) such as servers and domains by purchasing them. Easy enough if you have the money, but may leave a papertrail. Maybe even easier would be to download freely available open-source software.  
   
-  3. [Initial Access]()  
+  3. [Initial Access](https://attack.mitre.org/tactics/TA0001/)  
     * Attempts to gain access to the target network through phishing or exploitation of weaknesses in the system.  
-    * Technique: Phishing because all you need is a single target from the mass to fall for your tricks and you might gain access.  
+    * Technique: [Phishing](https://attack.mitre.org/techniques/T1566) because all you need is a single target from the mass to fall for your tricks and you might gain access.  
 
   4. [Execution](https://attack.mitre.org/tactics/TA0002/)  
     * Running the code that was succesfully planted on the target system. Often paired with a plethora of other tactics.  
-    * Technique of choice: Use the Command and Scripting Interpreter to run your scripts or commands. Most operating systems have a command line tool installed and through it manipulating the system can be relatively easy.  
+    * Technique of choice: Use the [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to run your scripts or commands. Most operating systems have a command line tool installed and through it manipulating the system can be relatively easy.  
   
   5. [Persistence](https://attack.mitre.org/tactics/TA0003/)  
     * Trying to stay in after the initial access.  
-    * Technique: Adding startup script to extend your stay. For example in Windows system you only need to edit the startup registry keys which are easy(ish) to find or quite literally just drop a shortcut to a specific startup folder for it to run on login.   
+    * Technique: [Adding startup script](https://attack.mitre.org/techniques/T1037) to extend your stay. For example in Windows system you only need to edit the startup registry keys which are easy(ish) to find or quite literally just drop a shortcut to a specific startup folder for it to run on login.   
   
   6. [Privilege Escalation](https://attack.mitre.org/tactics/TA0004/)  
     * Getting a higher access-level (like admin account or root)  
-    * Technique: Valid Accounts, first gaining control of valid accounts with high engough privileges already in place makes it easy to change the privileges of your next target.  
+    * Technique: [Valid Accounts](https://attack.mitre.org/techniques/T1078), first gaining control of valid accounts with high engough privileges already in place makes it easy to change the privileges of your next target.  
       
   7. [Defense Evasion](https://attack.mitre.org/tactics/TA0005/)  
     * Avoiding getting noticed by the user or the security installed in the target environment.  
-    * Technique: Masquerading your actions, scripts and/or software as processes of different software or into harmless filetypes.  
+    * Technique: [Masquerading](https://attack.mitre.org/techniques/T1036) your actions, scripts and/or software as processes of different software or into harmless filetypes.  
 
   8. [Credential Access](https://attack.mitre.org/tactics/TA0006/)  
     * Stealing account name and passwords for more access or privilege.  
-    * Technique: Use Keylogging to capture keystrokes while they're being typed in.  
+    * Technique: Use [Keylogging](https://attack.mitre.org/techniques/T1056/001) to capture keystrokes while they're being typed in to extract credentials.  
     
   9. [Discovery](https://attack.mitre.org/tactics/TA0007/)  
     * Familiarizing with the target environment to help making the next decision.  
-    * Technique: There are multiple pretty easy ones here as a lot the techniques utilize readily available system tools. System Information Discovery should be an easy enough start through cmd.  
+    * Technique: There are multiple pretty easy ones here as a lot the techniques utilize readily available system tools. [System Information Discovery](https://attack.mitre.org/techniques/T1082) should be an easy enough start through simple commands.  
   
   10. [Lateral Movement](https://attack.mitre.org/tactics/TA0008/)  
     * Trying to move within or through the target environment to find the intended target and/or the means to access it.  
-    * Technique: Usage of Internal Spearphishing to gain new credentials or elevate current rights. People are more likely to fall for phishing attempts when they come from a trusted company account.  
+    * Technique: Usage of [Internal Spearphishing](https://attack.mitre.org/techniques/T1534) to gain new credentials or elevate current rights. People are more likely to fall for phishing attempts when they come from a trusted company account.  
   
   11. [Collection](https://attack.mitre.org/tactics/TA0009/)  
     * Gathering of data within in the target system.  
-    * Technique: Once again multiple easy enough ways to gather data as access has already been gained.  Collect email, collect files, pack them for delivery.  
+    * Technique: Once again multiple easy enough ways to gather data as access has already been gained.  Collect email, collect files and pack them for delivery.  
   
   12. [Command and Control](https://attack.mitre.org/tactics/TA0009/)  
     * Attempts to open a communication line with the compromised system for data transfer.  
-    * Technique: Using Remote Access Software to communicate with the target system. This type of software is often already present or downloadable from lets say Software Center and can be possibly repurposed.  
+    * Technique: Using [Remote Access Software](https://attack.mitre.org/techniques/T1219) to communicate with the target system. This type of software is often already present or downloadable from lets say Software Center and can be possibly repurposed.  
 
   13. [Exfiltration](https://attack.mitre.org/tactics/TA0010/)  
     * Stealing the data that was collected earlier.  
-    * Technique: Exfiltration Over Web Services seems like a rather easy one. Choosing a popular Web Service that's most likely accesible from the target system should be easy and as such services are often used by the targets themselves such traffic might go unnoticed.  
+    * Technique: [Exfiltration Over Web Services](https://attack.mitre.org/techniques/T1567) seems like a rather easy one. Choosing a popular Web Service that's most likely accesible from the target system should be easy and as such services are often used by the targets themselves such traffic might go unnoticed.  
     
   14. [Impact](https://attack.mitre.org/tactics/TA0040/)  
     * Alter data to cover tracks or cause further harm.  
-    * Technique: Data Manipulation to distract the target and possibly never even get noticed, change a few dates here and some prices there or edit calendar meetings to make sure key personnel are not at the office on your chosen dates. I almost went with Data Destruction but nowadays a lot of the important data is stored on networked drives that are backed up on a regular basis.  
+    * Technique: [Data Manipulation](https://attack.mitre.org/techniques/T1565) to distract the target and possibly never even get noticed, change a few dates here and some prices there or edit calendar meetings to make sure key personnel are not at the office on your chosen dates. I almost went with Data Destruction but nowadays a lot of the important data is stored on networked drives that are backed up on a regular basis.  
   
 
   +  OWASP: Cross Site Scripting (XSS)  
