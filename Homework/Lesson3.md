@@ -4,12 +4,7 @@ Part of Data Security ICT4TF022-3008 course of Haaga-Helia University of Applied
 Link to course page [Here](https://terokarvinen.com/2021/data-security-2022p3-ict4tf022-3008/)
 
 # Tricks, Tips and Playbooks
-
-**ATTN**    
-Been sick since last Thursday so progress has been stunted. Finished the WebGoat assignments this morning (2022/2/7), took around 2 hours.  
-The articles will require more time. Last Wednesday I read them for 3+ hours and only got to about the **halfway point** of the Mitre 2022 tactics and that's without even looking at the sub-techniques. Will try to finish reading and summarizing this evening (depending on health.)    
-**ATTN**
-
+  
 * z) Read and summarize (This subtask z does not require tests with a computer. Some bullets per article is enough for your summary, feel free to write more if you like)  
   + Mitre 2022: ATT&CK Enterprise Matrix  
         - Give examples of a single, easy technique in each tactic. Which is the easiest?  
@@ -77,6 +72,9 @@ The articles will require more time. Last Wednesday I read them for 3+ hours and
 * y) Cross Site Story. Write a short story or draw a comic of a cross site  
   scripting attack. Make roles clear: who attacks? Who runs, what code, where? What unauthorized access is gained? (This subtask y does not require
   any tests with a computer.).  
+  
+  
+    
 * a) Webgoat: A3 Sensitive data exposure  
     + Insecure Login: 2 Let's try  
     The goal was to get some other user's login details by using a packet sniffer. The sniffer was not really needed. After clicking logging in the Chromium browser's Developer Tools > Network tab a new event start.mvc appeared containing the necessary information under the Payload tab.  
