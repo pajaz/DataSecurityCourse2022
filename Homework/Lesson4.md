@@ -32,45 +32,45 @@ Internet
 
 #### € Santos et al: The Art of Hacking (Video Collection): 4. Active Reconnaissance: 4.0 - 4.3 (four videos, about 20 min)
   
-    * In Active Reconnaisance or "The Scanning Phase" information is actually sent to the target network.  
-    * If anyone is monitoring, active recon might set off alarms.  
-      + **Tip: Get louder step by step to see if anyone's looking.**  
-    * Time sensitive task need thorough enumeration of the target network or computer before attacking to avoid getting overwhelmed.  
-    * Recon helps you decide which systems and services to focus on.  
-    * Methods:
-      + Port Scanning:  
-        * Confirm that the ports found in Passive phase are actually open and find new open ports.  
-        * Tools:
-          + nmap (Most popular, versatile and stable port scanner)  
-          + Masscan (Fastest and good for large amounts of ports, not as versatile as nmap)  
-          + Udpprotoscanner (For udp port scanning)  
-      + Web Service Review:  
-        * Decide which of the possibly multiple Web applications to prioritize during attack.  
-        * EyeWitness tool (visits every website it's given and returns header information and screenshots etc.)  
-      + Vulnerability Scanning:
-        * Common mistake is to jump straight here without doing proper recon.  
-        * Should be at the end of recon phase because the methods used make sometimes a lot of noise.  
-        * Tools: 
-          + Network Vulnerability Scanners:
-            * OPENVAS - Free & Open Source
-            * For professional environments the payed options are better speed and efficiency wise
-            * Nessus - $$
-            * Nexpose - $$
-            * Qualys - $$
-            * Nmap (limited)
-              - SCRIPT SCAN options (/usr/share/nmap/scripts)
-                - Full list and use guide on nmap website
-          + Web Vulnerability Scanners:
-            * Nikto  
-              + People's favorite  
-            * WPScan
-              + Specific to WordPress sites
-            * SQLMap
-              + Database pentesting and SQLInjections
-            * Burp Suite
-              + One of the most popular WVS tools
-            * Zed Attack Proxy
-              + Similar to Burp but free  
+  * In Active Reconnaisance or "The Scanning Phase" information is actually sent to the target network.  
+  * If anyone is monitoring, active recon might set off alarms.  
+    + **Tip: Get louder step by step to see if anyone's looking.**  
+  * Time sensitive task need thorough enumeration of the target network or computer before attacking to avoid getting overwhelmed.  
+  * Recon helps you decide which systems and services to focus on.  
+  * Methods:
+    + Port Scanning:  
+      * Confirm that the ports found in Passive phase are actually open and find new open ports.  
+      * Tools:
+        + nmap (Most popular, versatile and stable port scanner)  
+        + Masscan (Fastest and good for large amounts of ports, not as versatile as nmap)  
+        + Udpprotoscanner (For udp port scanning)  
+    + Web Service Review:  
+      * Decide which of the possibly multiple Web applications to prioritize during attack.  
+      * EyeWitness tool (visits every website it's given and returns header information and screenshots etc.)  
+    + Vulnerability Scanning:
+      * Common mistake is to jump straight here without doing proper recon.  
+      * Should be at the end of recon phase because the methods used make sometimes a lot of noise.  
+      * Tools: 
+        + Network Vulnerability Scanners:
+          * OPENVAS - Free & Open Source
+          * For professional environments the payed options are better speed and efficiency wise
+          * Nessus - $$
+          * Nexpose - $$
+          * Qualys - $$
+          * Nmap (limited)
+            - SCRIPT SCAN options (/usr/share/nmap/scripts)
+              - Full list and use guide on nmap website
+        + Web Vulnerability Scanners:
+          * Nikto  
+            + People's favorite  
+          * WPScan
+            + Specific to WordPress sites
+          * SQLMap
+            + Database pentesting and SQLInjections
+          * Burp Suite
+            + One of the most popular WVS tools
+          * Zed Attack Proxy
+            + Similar to Burp but free  
   
 #### Lyon 2009: Nmap Network Scanning: Chapter 15. Nmap Reference Guide: Port Scanning Basics (what's open, closed and filtered? This is a sample chapter from a book by the author of nmap, Gordon Lyon aka Fyodor Vaskovich)
 
@@ -228,6 +228,7 @@ PORT     STATE SERVICE     VERSION
 |_End of status  
   
 + **FTP port that is open for remote file transfer. It allows anonymous login which could be very exploitable. I see that a lot of the data is in plain text form which seems insecure. Also the row "logged in as ftp" seems like the service was possibly set up with some default user information. That there's no bandwidth limit allows the moving of a lot of data**  
++ **vsftpd version is 2.3.4 whereas the latest stable release is 3.0.2(https://help.ubuntu.com/community/vsftpd). Version 2.3.4 is vulnerable to taking over the command shell on port 6200 very easily**
   
 22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
 | ssh-hostkey: 
