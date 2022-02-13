@@ -84,7 +84,9 @@ Internet
   In Virtual Box application I chose File > Host Network Manager > Create.
   A vboxnet0 appeared and I chose the DHCP Server option to handle IP assignments for new devices in the network.
   <img src="Pictures/vboxnet0.png">
-  To try it out I chose my existing Virtual Machine > Settings > Network > Adapter 1 > Attached to: Host-only Adapter and the name vboxnet0 automatically appeared in the name -field. OK.
+  To try it out I chose:  
+  My existing Virtual Machine > Settings > Network > Adapter 1 > Attached to: Host-only Adapter   
+  and the name vboxnet0 automatically appeared in the name -field. OK.  
   Turned on my existing Virtual Machine and checked the IP-address:  
   `pajazzo@derpsec:~$ hostname -I`
   `192.168.56.102`  
