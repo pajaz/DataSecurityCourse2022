@@ -49,7 +49,7 @@ Internet
       * EyeWitness tool (visits every website it's given and returns header information and screenshots etc.)  
     + Vulnerability Scanning:
       * Common mistake is to jump straight here without doing proper recon.  
-      * Should be at the end of recon phase because the methods used make sometimes a lot of noise.  
+      * Should be at the end of recon phase because the methods used sometimes make a lot of noise.  
       * Tools: 
         + Network Vulnerability Scanners:
           * OPENVAS - Free & Open Source
