@@ -73,12 +73,15 @@ Internet
             + Similar to Burp but free  
   
 #### Lyon 2009: Nmap Network Scanning: Chapter 15. Nmap Reference Guide: [Port Scanning Basics](https://nmap.org/book/man-port-scanning-basics.html) (what's open, closed and filtered? This is a sample chapter from a book by the author of nmap, Gordon Lyon aka Fyodor Vaskovich)
-
- 
-
-
-
-
+  
+  * Even though nmap is a very versatile tool its core function still is port scanning.  
+  * Application that accepts connection requests (TCP, UDP SCTP) is called **open**. Possibly exploitable.  
+  * Accessible but no application listening in on the port is called **closed**. Might be a good idea to scan again later.   
+  * **Filtered** ports are the ones where nmap couldn't determine the status duo packets getting filtered. Might be due to firewall and these kinds of ports slower the scan because they force nmap to retry several times.  
+  * Accessible but not sure if open or closed. An **unfiltered** port. This classification only with ACK scans.  
+  * **Open|filtered** occurs when the port is either open, or filtered. Scanning these ports with other scan types might resolve the issue.  
+  * **Closed|filtered** is what it sounds like. Closed or filtered.  
+  
 ### a) My networks. Add a new vboxnet internal network to your VirtualBox (File: Host Network Manager...)
   
   In Virtual Box application I chose File > Host Network Manager > Create.
@@ -377,11 +380,19 @@ Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: U
 ---
 
 **Results from scripts run during scan**
+
+  + **This part of my answer is guessing but I think nmap runs a series of scripts against the target computer.**
   
 Host script results:  
 |_clock-skew: mean: -2s, deviation: 0s, median: -2s  
+  
+  + **Testing if the target computer clock is correctly synchronized?**  
+  
 |_ms-sql-info: ERROR: Script execution failed (use -d to debug)  
-| nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)  
+  
+  + **Information on the target system's mysql solution. Running the script failed.***
+  
+| nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)    
 | Names:  
 |   METASPLOITABLE<00>   Flags: <unique><active>  
 |   METASPLOITABLE<03>   Flags: <unique><active>  
@@ -390,10 +401,15 @@ Host script results:
 |   WORKGROUP<00>        Flags: <group><active>  
 |   WORKGROUP<1d>        Flags: <unique><active>  
 |_  WORKGROUP<1e>        Flags: <group><active>  
+  
+  + **Checking NetBIOS information which is a bit outdated method for computers to connect with eachother through LAN (https://www.techtarget.com/searchnetworking/definition/NetBIOS). netBIOS name is the only available information**  
+  
 |_smb-os-discovery: ERROR: Script execution failed (use -d to debug)  
 |_smb-security-mode: ERROR: Script execution failed (use -d to debug)  
 |_smb2-time: Protocol negotiation failed (SMB2)  
   
+  + **Rest of the scripts were failures.**  
+    
 NSE: Script Post-scanning.  
 Initiating NSE at 17:17  
 Completed NSE at 17:17, 0.00s elapsed  
