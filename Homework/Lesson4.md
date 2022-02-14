@@ -13,7 +13,7 @@ Internet
 
 ### z) Read (or watch or listen) and summarize (This subtask z does not require tests with a computer. Some bullets per article is enough for your summary, feel free to write more if you like)
   
-#### € Santos et al: The Art of Hacking (Video Collection): 3. Passive Reconnoissance: 3.0 - 3.4 (five videos, about 35 min)
+#### € Santos et al: The Art of Hacking (Video Collection): [3. Passive Reconnaissance](https://learning.oreilly.com/videos/the-art-of/9780135767849/9780135767849-SPTT_03_00/): 3.0 - 3.4 (five videos, about 35 min)
      
   * Recon is often overlooked but can be the most important step.  
   * Passive Reconnaisance is researching without sending any information to the target network thus no alarms are tripped.  
@@ -30,7 +30,7 @@ Internet
   * Mentioned a useful website for doing recon http://www.exploit-db.com/google-hacking-database  
 
 
-#### € Santos et al: The Art of Hacking (Video Collection): 4. Active Reconnaissance: 4.0 - 4.3 (four videos, about 20 min)
+#### € Santos et al: The Art of Hacking (Video Collection): [4. Active Reconnaissance](https://learning.oreilly.com/videos/the-art-of/9780135767849/9780135767849-SPTT_04_00/): 4.0 - 4.3 (four videos, about 20 min)
   
   * In Active Reconnaisance or "The Scanning Phase" information is actually sent to the target network.  
   * If anyone is monitoring, active recon might set off alarms.  
@@ -72,7 +72,7 @@ Internet
           * Zed Attack Proxy
             + Similar to Burp but free  
   
-#### Lyon 2009: Nmap Network Scanning: Chapter 15. Nmap Reference Guide: Port Scanning Basics (what's open, closed and filtered? This is a sample chapter from a book by the author of nmap, Gordon Lyon aka Fyodor Vaskovich)
+#### Lyon 2009: Nmap Network Scanning: Chapter 15. Nmap Reference Guide: [Port Scanning Basics](https://nmap.org/book/man-port-scanning-basics.html) (what's open, closed and filtered? This is a sample chapter from a book by the author of nmap, Gordon Lyon aka Fyodor Vaskovich)
 
  
 
@@ -371,10 +371,7 @@ Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: U
   + **Estimated uptime is just about an hour at this point and the target is near (1 hop so there is only one router between us and the target)**  
   + **The machine is not very susceptible to TCP Sequence attacks Good luck! being the most difficult rank on this statistic**  
   + **Can't really figure out what the IP ID Sequence Generator number is supposed to be even after reading the nmap documentation on it**  
-
-
-****
-
+  
 **End of Device, Operating system and host information**
 
 ---
