@@ -56,17 +56,17 @@ If this advantage is lost and the systems have already been breached assume the 
 6. Be careful, be silent
 In order to keep investigating the attacker the analyst should use tools that don't make noise or that make the kind of noise the attacker expects them to make. 
 
-* Few tips: 
-When gathering OSINT (Open-Source Intelligence) knowing the used tools is a must. For example while trying to find out more about the adversary's domains or IP addresses you definitely don't want your tools to establish connections to them. This is comparable to the adversary's reconnaissance phase. 
+A few tips: 
+* When gathering OSINT (Open-Source Intelligence) knowing the used tools is a must. For example while trying to find out more about the adversary's domains or IP addresses you definitely don't want your tools to establish connections to them. This is comparable to the adversary's reconnaissance phase. 
 
-Usage of Passive DNS systems during lookups, performing them from the company system to make the right kind of noise. The attacker expects his malware to contact a certain domain from the company IP-address so this might not trigger any alerts. 
+* Usage of Passive DNS systems during lookups, performing them from the company system to make the right kind of noise. The attacker expects his malware to contact a certain domain from the company IP-address so this might not trigger any alerts. 
 
-No blindly guessing domains/subdomains. This is what the attacker might do during recon but as the blue team you don't want to make any unnecessary noise.
+* No blindly guessing domains/subdomains. This is what the attacker might do during recon but as the blue team you don't want to make any unnecessary noise.
 
-This should go without saying and has already been discussed during this course but:
+* This should go without saying and has already been discussed during this course but:
 Investigate inside a preferably offline sandbox (Virtual or hardware). If a virtual network is not enough and a real Internet connection has to be made, the sand-box should mimic an actual organization workstation as closely as possible and be setup so it is technically impossible for it to communicate with other company Infrastructure.  
   
-All in all the methods described here are very similar to the methods used by an adversary except maybe even more careful that is because the adversary is probably a lot more easily scared off than the defender. Similar ruleset still applies whether attacking or defending. Keep your information secure.
+* All in all the methods described here are very similar to the methods used by an adversary except maybe even more careful that is because the adversary is probably a lot more easily scared off than the defender. Similar ruleset still applies whether attacking or defending. Keep your information secure.
  
 8. Case of VandaTheGod
   
