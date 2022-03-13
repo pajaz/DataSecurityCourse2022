@@ -14,7 +14,30 @@ References checked.
 
 ## z) Read (or watch or listen) and summarize (This subtask z does not require tests with a computer. Some bullets per article is enough for your summary, feel free to write more if you like)  
   
-* A two security conference presentations from different conferences. (This is about 1-2 hours [total] of video for typical conferences)  
+### A two security conference presentations from different conferences. (This is about 1-2 hours \[total\] of video for typical conferences)  
+
+[Disobey 2017 - Jaanus Kääp - Hacking Antiviruses](https://www.youtube.com/watch?v=YHbDB9CPz1w )
+  
+* Former web app developer who now works for an Estonian company Clarified Security which specializes in Vulnerability testing, Development and Research 
+* Speech is based on his own experiences  
+* Discusses why to attack Antivirus systems and the methods on how to perform the attacks  
+* Main points:  
+    - Attacking AV systems is an attack towards the protector and because AV systems usually run with escalated privileges, the attacker might elevate their own privileges and gain kernel access for example. Attacking them is also fun.  
+    - AV systems are usually very complex and consist of the following parts:  
+        + Low privilege GUI
+        + Services that are the "Main meat" of AV systems and handle scanning, parsing, packing, emulating
+        + Updaters which are usually also services 
+        + Software drivers (Speaker's own fortè)
+    - Most successful attacks towards AV-systems stem from poorly managed configuration such as letting user controlled input run directly in kernel (IOCTL attack).
+* He mentioned [Google Project Zero](https://googleprojectzero.blogspot.com/) blog as a good blog to read on  even though it is pretty advanced.
+* Briefly mentioned some of his favorite tools:
+    - Process Explorer
+    - DriverView
+    - DeviceTree
+    - WinObj
+    - FoxHex (Speakers own tool, still in development in 2017, can't seem to find anything on it via search engine's though)
+* Towards the end the speech went a bit technical.   
+
   
 
 ## a) Voluntary, recommended: add a link to your reports as a comment to this page. You might raise in Google, and might also get other people to refer to your work.
