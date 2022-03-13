@@ -1,6 +1,7 @@
 # Presentation plan for OPSEC in Data Security
 
 1. What is OPSEC? (Operations Security)
+OPSEC an abbreviation of Operations Security is originally a military term referring to the ways information is kept safe from the enemy. 
 One of the most fundamental parts of military operations and today a must have procedure for corporations. 
 (https://www.techrepublic.com/article/the-five-military-opsec-steps-that-businesses-can-learn-from/9)
 "Operational security (OPSEC) is a process that organizations deploy to prevent sensitive information from getting into the wrong hands. OPSEC identifies actions that may seem innocuous but could inadvertently result in critical or sensitive data being revealed or leaked to a potential attacker." (https://www.fortinet.com/resources/cyberglossary/operational-security)
