@@ -38,7 +38,7 @@ References checked.
     - FoxHex (Speakers own tool, still in development in 2017, can't seem to find anything on it via search engine's though)
 * Towards the end the speech went a bit technical.   
   
-[#GRIMMCon - Xena Olsen - Adversary Detection Pipelines: Finally Making Your Threat Intel Useful](ttps://www.youtube.com/watch?v=qJMwwvdkKOM)  
+[GRIMMCon - Xena Olsen - Adversary Detection Pipelines: Finally Making Your Threat Intel Useful](ttps://www.youtube.com/watch?v=qJMwwvdkKOM)  
 
 * Presenters are a CTI Analyst, Pentester and a Red Team Tool Developer
 * Discusses the amount of security related data a company faces and how to properly arrange it and form an Adversary Detection Pipeline.  
@@ -69,3 +69,5 @@ References checked.
     * Thinking like a hunter, Matt bromiley (2019)
 
 ## a) Voluntary, recommended: add a link to your reports as a comment to this page. You might raise in Google, and might also get other people to refer to your work.
+
+Link added.
