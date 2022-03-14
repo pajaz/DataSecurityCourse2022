@@ -12,6 +12,6 @@ Link to course page [Here](https://terokarvinen.com/2021/data-security-2022p3-ic
 
 [Lesson 4](Homework/Lesson4.md)  
   
-[Presentation: OPSEC in Data Security](Presentation/OPSEC%20in%20Data%20Security.md)
+[Presentation: OPSEC in Data Security](Presentation/OPSECinDataSecurity.md)
   
-[Final Assignment](Homework/Final%20Assignments.md)
+[Final Assignment](Homework/FinalAssignments.md)
