@@ -37,17 +37,35 @@ References checked.
     - WinObj
     - FoxHex (Speakers own tool, still in development in 2017, can't seem to find anything on it via search engine's though)
 * Towards the end the speech went a bit technical.   
-
   
+[#GRIMMCon - Xena Olsen - Adversary Detection Pipelines: Finally Making Your Threat Intel Useful](ttps://www.youtube.com/watch?v=qJMwwvdkKOM)  
+
+* Presenters are a CTI Analyst, Pentester and a Red Team Tool Developer
+* Discusses the amount of security related data a company faces and how to properly arrange it and form an Adversary Detection Pipeline.  
+* The speech is divided into three areas:
+    - Pain Points which are basically the things companies should focus on
+    - Background info
+        + Attribution is hard
+        + TTPs (The how of the attack)
+    - Adversary Detection Pipelines
+        + Way to prioritize threats via structured and unstructured formats.
+        + Structured 
+            * Known Threats
+            * IOSs & TTPs
+            * Real-Time Analysis
+        + Unstructured
+            * Undefined Threats
+            * New TTPs
+        + Analyzing and Prep/Prio
+            * Intent (What do they want?) 
+            * Capability (What are they using?)
+            * Opportunity (How much do they know?)
+* At the end the speech went a bit too business management -like to my liking.
+* Recommended reading:
+    * Hacker Playbook 2, Peter Kim
+    * CTI Squad Goals-Setting Requirements, Scott J. Roberts
+    * TI Planning, Brian P. Kimpe
+    * The Evolution of CTI: 2019 SANS CTI Survey, p. 7, Rebekah Brown & Robert M Lee
+    * Thinking like a hunter, Matt bromiley (2019)
 
 ## a) Voluntary, recommended: add a link to your reports as a comment to this page. You might raise in Google, and might also get other people to refer to your work.
-  
-
-Tips:  
-  
-* It might be nice to pick one big name conference (Black Hat, RSA conference, HOPE, Disobey) and another you've never heard of
-You can find many security conferences in Youtube, legally, for free, uploaded by conference organizers
-* A lot more conferences in https://infocondb.org/con/
-* There are some conferences in O'Reilly Learning (former Safari), too
-* Remember, no online class on w10. We'll meet on w11 for the final round of presentations, and then it's important to be present.
-The goal of this task is to familiarize you with security conferences; learn how to view them without travelling to the other side of the planet and paying an expensive ticket; and prepare you to keep yourself up to date after the course ends.  
