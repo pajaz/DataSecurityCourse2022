@@ -1,1 +1,0 @@
-sed -n 343,345p; tempholder.txt
